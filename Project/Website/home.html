@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Destiny Guide</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body style="background-color: #1b1b1b">
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo">The Destiny Guide</div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about/about.html">About</a></li>
+        <li><a href="services/services.html">Services</a></li>
+        <li><a href="contact/contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- main -->
+    <div class="mode-container">
+      <div class="mode-box" onclick="openModal('learning')">Learning Mode</div>
+      <div class="mode-box" onclick="openModal('driving')">Driving Mode</div>
+    </div>
+
+    <div id="modal" class="modal" style="display: none">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Learning Mode</h2>
+        <p>
+          Access lessons and resources through the Maruti Suzuki Driving School
+          website.
+        </p>
+        <button onclick="openLearningWebsite()">
+          Visit Maruti Suzuki Driving School
+        </button>
+      </div>
+    </div>
+
+    <div id="modal-driving" class="modal" style="display: none">
+      <div class="modal-content">
+        <span class="close" onclick="closeModalDriving()">&times;</span>
+        <h2>Driving Mode</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <button onclick="startDrivingMode()">Start Driving Mode</button>
+      </div>
+    </div>
+
+    <!-- content -->
+
+    <section class="section" id="driving-tips">
+      <h2>Driving Tips for New Drivers</h2>
+      <div class="tip">
+        <h3>Basic Techniques</h3>
+        <ul>
+          <li>Practice parallel parking in empty parking lots.</li>
+          <li>Learn how to make a three-point turn safely.</li>
+          <li>Familiarize yourself with handling wet or icy roads.</li>
+        </ul>
+      </div>
+      <div class="tip">
+        <h3>Safe Driving Practices</h3>
+        <ul>
+          <li>Always use your turn signals.</li>
+          <li>Keep a safe distance from the vehicle in front of you.</li>
+          <li>Regularly check your blind spots before changing lanes.</li>
+        </ul>
+      </div>
+      <div class="tip">
+        <h3>Tips for Nervous Drivers</h3>
+        <ul>
+          <li>Practice in low-traffic areas until you feel confident.</li>
+          <li>Drive with a calm and experienced friend.</li>
+          <li>Take deep breaths to manage anxiety before driving.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="road-safety">
+      <h2>Road Safety Information</h2>
+      <div class="safety-topic">
+        <h3>Understanding Road Signs</h3>
+        <p>Familiarize yourself with common road signs:</p>
+        <ul>
+          <li>Stop Sign: Indicates you must come to a complete stop.</li>
+          <li>Yield Sign: Slow down and give way to other vehicles.</li>
+          <li>
+            Speed Limit Sign: Indicates the maximum speed allowed on that road.
+          </li>
+        </ul>
+      </div>
+      <div class="safety-topic">
+        <h3>Traffic Laws</h3>
+        <p>Key traffic laws to remember:</p>
+        <ul>
+          <li>Obey all traffic signals and signs.</li>
+          <li>Do not drive under the influence of alcohol or drugs.</li>
+          <li>
+            Always wear your seatbelt and ensure all passengers do the same.
+          </li>
+        </ul>
+      </div>
+      <div class="safety-topic">
+        <h3>Emergency Procedures</h3>
+        <p>What to do in case of an accident:</p>
+        <ul>
+          <li>Stay calm and check for injuries.</li>
+          <li>Move to a safe location if possible.</li>
+          <li>Contact emergency services and report the incident.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about/about.html">About</a></li>
+            <li><a href="services/services.html">Services</a></li>
+            <li><a href="contact/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Instagram</a>
+            <a href="#" class="social-icon">LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>
+            Email:
+            <a href="mailto:info@destinyguide.com">info@destinyguide.com</a>
+          </p>
+          <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 The Destiny Guide. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="home.js"></script>
+  </body>
+</html>
